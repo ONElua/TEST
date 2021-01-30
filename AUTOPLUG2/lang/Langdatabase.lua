@@ -1,4 +1,4 @@
-Online_Langs = {
+Langs = {
 { id =  "ENGLISH_US",	version = "01.27",		author =  "Yoti" },
 { id =  "ITALIAN",		version = "01.30",		author =  "TheHeroGAC" },
 { id =  "JAPANESE",		version = "01.26",		author =  "Kouchan" },
