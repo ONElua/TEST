@@ -67,6 +67,7 @@ ENGLISH_US["MENU_PSP_PLUGINS_DESC"] =                   "Install PSP plugins for
 ENGLISH_US["MENU_EXTRAS_PKGJ_TITLE"] =                  "Configure PKGj options"
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO"] =            "Download and install iTLS-Enso vpk"
 ENGLISH_US["MENU_EXTRAS_INSTALL_VITASHELL"] =           "Download and install Vitashell vpk"
+ENGLISH_US["MENU_EXTRAS_INSTALL_SHARKF00D"] =           "Download and install ShaRKF00D vpk"
 ENGLISH_US["MENU_EXTRAS_INSTALL_BATTFIX"] =             "Download and install batteryFixer vpk"
 ENGLISH_US["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =          "Set custom boot splash"
 ENGLISH_US["MENU_EXTRAS_CUSTOM_WARNING"] =              "Set custom warning message"
@@ -82,6 +83,7 @@ ENGLISH_US["MENU_EXTRAS_CUSTOMWARNING_DESC"] =          "Set a custom warning me
 ENGLISH_US["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =           "Set the Level of transparency (255 = 0% Transparency, 0 = 100% Transparency) values below 30 are not recommended"
 ENGLISH_US["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =       "Download and install iTLS-Enso vpk in your Vita (Adds TLS v1.2 to Enso enabled devices)"
 ENGLISH_US["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =      "Download and install Vitashell vpk in your Vita"
+ENGLISH_US["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =      "Download and install ShaRKF00D vpk in your Vita"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =        "Download and install PSP2-batteryFixer vpk in your Vita (Fixes most of PSVita's battery-related problems)"
 ENGLISH_US["MENU_EXTRAS_TRANSLATE_DESC"] =              "Help improve AutoPlugin II by translating to your language!"
 ENGLISH_US["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =   "Warning!!! This option will reset your ur0:tai/config.txt"
@@ -416,6 +418,7 @@ ENGLISH_US["INSTALLP_DESC_TROPHYSHOT"] =             	"Just like in PS4, it take
 ENGLISH_US["INSTALLP_DESC_BOOTSOUND"] =             	"This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 ENGLISH_US["INSTALLP_DESC_QUICKMENU"] =             	"Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 ENGLISH_US["INSTALLP_DESC_DT2S_STATUSBAR"] =            "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+ENGLISH_US["INSTALLP_DESC_FRUITPEEL"] =                 "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 ENGLISH_US["INSTALLP_DESC_DT2S"] =                      "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
@@ -427,7 +430,7 @@ ENGLISH_US["INSTALLP_DESC_VITAGRAFIX"] =                "Plugin that allows you 
 ENGLISH_US["INSTALLP_DESC_OVERCLOCK"] =                 "Simple Overclock Plugin for Taihen (SELECT + UP enable menu. SELECT + DOWN close menu)"
 ENGLISH_US["INSTALLP_DESC_FRAMECOUNTER"] =              "This is a little plugin that works as an FPS counter. It will show an FPS counter on the top left side of your screen."
 ENGLISH_US["INSTALLP_DESC_VGI"] =                       "A simple taihen plugin that prints useful information about PS Vita games. (SELECT + L Open/Close VGi menu in your game)"
-ENGLISH_US["INSTALLP_DESC_FUCKPSSE"] =                  "A plugin to decrypt PSM games"
+ENGLISH_US["INSTALLP_DESC_FUCKPSSE"] =                  "A plugin to Dump & Decrypt PSSE-Protected Games."
 ENGLISH_US["INSTALLP_DESC_PSMPATCH"] =                  "Allows you to modify PSM Games, and also can be used to load PSM Homebrew."
 ENGLISH_US["INSTALLP_DESC_TROPHAX"] =                   "Universal trophy unlocker for PSVITA. (in game START + SELECT enable plugin, L+R unlock all or L+START unlock a specific trophy, L+UP or L+DOWN to make your selection then L+CIRCLE to unlock)"
 ENGLISH_US["INSTALLP_DESC_TURBOPAD"] =                  "This plugin allows you to enable RapidFire on whatever button. (START + TRIANGLE Open config menu)"

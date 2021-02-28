@@ -67,6 +67,7 @@ JAPANESE["MENU_PSP_PLUGINS_DESC"] =                     "Adrenaline用のPSPプ�
 JAPANESE["MENU_EXTRAS_PKGJ_TITLE"] =                    "PKGJ設定オプション"
 JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO"] =              "iTLS-Enso.vpkをダウンロードしてインストール"
 JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL"] =             "Download and install Vitashell vpk"
+JAPANESE["MENU_EXTRAS_INSTALL_SHARKF00D"] =             "Download and install ShaRKF00D vpk"
 JAPANESE["MENU_EXTRAS_INSTALL_BATTFIX"] =               "batteryFixer.vpkをダウンロードしてインストール"
 JAPANESE["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =            "カスタムブートスプラッシュの設定"
 JAPANESE["MENU_EXTRAS_CUSTOM_WARNING"] =                "カスタム警告メッセージの設定"
@@ -82,6 +83,7 @@ JAPANESE["MENU_EXTRAS_CUSTOMWARNING_DESC"] =            "ENSOで起動すると�
 JAPANESE["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =             "透明化のレベルを設定できます。（255 = 0％透明、0 = 100％透明） 30未満の値は推奨されません"
 JAPANESE["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =         "VitaにiTLS-Enso.vpkをダウンロードしてインストールできます（Enso対応デバイスにTLS v1.2を追加します）"
 JAPANESE["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =        "Download and install Vitashell vpk in your Vita"
+JAPANESE["MENU_EXTRAS_INSTALL_SHARKF00D_DESC"] =        "Download and install ShaRKF00D vpk in your Vita"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =          "PSViaにPSP2-batteryFixer.vpkをダウンロードしてインストールできます（PSVitaのバッテリー関連の問題のほとんどを修正します）"
 JAPANESE["MENU_EXTRAS_TRANSLATE_DESC"] =                "あなたが使用する言語に翻訳してAutoPlugin IIの改善に協力してください！"
 JAPANESE["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =     "Warning!!! This option wil reset your ur0:tai/config.txt"
@@ -416,6 +418,7 @@ JAPANESE["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it ta
 JAPANESE["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 JAPANESE["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+JAPANESE["INSTALLP_DESC_FRUITPEEL"] =                   "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 JAPANESE["INSTALLP_DESC_DT2S"] =                        "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
@@ -427,7 +430,7 @@ JAPANESE["INSTALLP_DESC_VITAGRAFIX"] =                  "PSVitaゲームの解�
 JAPANESE["INSTALLP_DESC_OVERCLOCK"] =                   "Taihenのシンプルなオーバークロックプラグイン（SELECT + UPでメニューを有効にする。 SELECT + DOWNでメニューを閉じる）"
 JAPANESE["INSTALLP_DESC_FRAMECOUNTER"] =                "これは、FPSカウンターとして機能する小さなプラグインです。 画面の左上にFPSカウンターが表示されます。"
 JAPANESE["INSTALLP_DESC_VGI"] =                         "PSVitaゲームに関する有用な情報を出力するシンプルなtaihenプラグイン。 （SELECT + L でゲームのVGiメニューを開く/閉じる）"
-JAPANESE["INSTALLP_DESC_FUCKPSSE"] =                    "PSMゲームを解読するプラグイン"
+JAPANESE["INSTALLP_DESC_FUCKPSSE"] =                    "A plugin to Dump & Decrypt PSSE-Protected Games."
 JAPANESE["INSTALLP_DESC_PSMPATCH"] =                    "PSMゲームを変更できます。また、PSM Homebrewのロードにも使用できます。"
 JAPANESE["INSTALLP_DESC_TROPHAX"] =                     "PSVitaのユニバーサルトロフィーロック解除。 （ゲームでは、START + SELECTでプラグインを有効にし、L + Rですべてのロックを解除するか、L + STARTで特定のトロフィーをロック解除し、L + UP または L + DOWNで選択してからL + CIRCLEでロックを解除します）"
 JAPANESE["INSTALLP_DESC_TURBOPAD"] =                    "このプラグインを使用すると、どのボタンでもRapidFireを有効にできます。 （START + △で設定メニューを開く）"

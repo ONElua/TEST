@@ -68,6 +68,7 @@ ITALIAN["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opzioni per il file Con
 ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO"] =               "Scarica e Installa iTLS-Enso vpk"
 ITALIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Scarica e Installa batteryFixer vpk"
 ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL"] =              "Download and install Vitashell vpk"
+ITALIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "Download and install ShaRKF00D vpk"
 ITALIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Imposta Custom Boot Splash"
 ITALIAN["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Imposta Custom Warning Message"
 ITALIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Modifica Transparent Impose"
@@ -82,6 +83,7 @@ ITALIAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Consente di impostare u
 ITALIAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Consente di impostare valori di Livello di trasparente (255=0% trasparente, 0=100% trasparente) inferiore a 30 non è raccomandato"
 ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Consente il download e l'installazione di iTLS-Enso vpk su PSVita (aggiunge il TLS v1.2 ai dispositivi abilitati Enso)"
 ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =         "Download and install Vitashell vpk in your Vita"
+ITALIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "Download and install ShaRKF00D vpk"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permette di scaricare e installare PSP2-batteryFixer vpk in Vita (risolve la maggior parte dei problemi relativi alla batteria della PSVita)"
 ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare AutoPlugin traducendo nella tua lingua!"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_RESET_CONFIG"] =      "Attenzione!!! Questa opzione ripristinerà il tuo ur0:tai/config.txt"
@@ -416,6 +418,7 @@ ITALIAN["INSTALLP_DESC_TROPHYSHOT"] =             	    "Just like in PS4, it tak
 ITALIAN["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WAV file as a custom boot jingle on PS Vita/PS TV at boot."
 ITALIAN["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 ITALIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
+ITALIAN["INSTALLP_DESC_FRUITPEEL"] =                    "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
 ITALIAN["INSTALLP_DESC_DT2S"] =                         "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
@@ -427,7 +430,7 @@ ITALIAN["INSTALLP_DESC_VITAGRAFIX"] =                   "Plugin che consente di 
 ITALIAN["INSTALLP_DESC_OVERCLOCK"] =                    "Plugin per Overclock CPU/GPU per Taihen (SELECT + UP enable menu. SELECT + DOWN close menu)"
 ITALIAN["INSTALLP_DESC_FRAMECOUNTER"] =                 "Si tratta di un piccolo plugin che funziona come un contatore FPS. Sul lato superiore sinistro della schermata mostrerà un contatore FPS."
 ITALIAN["INSTALLP_DESC_VGI"] =                          "Un semplice plugin per taihen che consente di visualizzare informazioni utili sui giochi PS Vita. (SELECT + L Apre/Chiude VGi menu nel gioco)"
-ITALIAN["INSTALLP_DESC_FUCKPSSE"] =                     "Un plugin per decriptare giochi PSM"
+ITALIAN["INSTALLP_DESC_FUCKPSSE"] =                     "A plugin to Dump & Decrypt PSSE-Protected Games."
 ITALIAN["INSTALLP_DESC_PSMPATCH"] =                     "Consente di modificare i giochi del PSM e può essere utilizzato anche per caricare Homebrew PSM."
 ITALIAN["INSTALLP_DESC_TROPHAX"] =                      "Sbloccatore universale dei trofei per PSVITA. (Nel gioco START + SELECT abilita plugin, L+R sblocca tutto o L+START sblocca uno specifico trofeo, L+SU o L+GIU to make your selection then L+CERCHIO per sbloccare)"
 ITALIAN["INSTALLP_DESC_TURBOPAD"] =                     "Questo plugin ti permette di abilitare il RapidFire su qualunque pulsante tu desideri (START + TRIANGOLO Apre config menu)"
