@@ -76,7 +76,17 @@ JAPANESE["MENU_EXTRAS_TRANSLATE"] =                     "AutoPlugin IIの翻訳"
 JAPANESE["MENU_EXTRAS_RESET_CONFIG"] =             	    "Reset config.txt in ur0"
 JAPANESE["MENU_EXTRAS_QUICKMENU_PLUS"] =                "Configuration for QuickMenu Plus"
 JAPANESE["MENU_AUTOBOOT_TITLE"] =                       "Autoboot"
+JAPANESE["MENU_EXTRAS_DOWNLOAD_TSV"] =                  "Download PKGj Database"
+JAPANESE["MENU_EXTRAS_PSV_GAMES_TSV"] =                 "PSV Games"
+JAPANESE["MENU_EXTRAS_PSV_DLC_TSV"] =                   "PSV DLCs"
+JAPANESE["MENU_EXTRAS_PSV_DEMOS_TSV"] =                 "PSV Demos"
+JAPANESE["MENU_EXTRAS_PSV_THEMES_TSV"] =                "PSV Themes"
+JAPANESE["MENU_EXTRAS_PSM_GAMES_TSV"] =                 "PSM Games"
+JAPANESE["MENU_EXTRAS_PSX_GAMES_TSV"] =                 "PSX Games"
+JAPANESE["MENU_EXTRAS_PSP_GAMES_TSV"] =                 "PSP Games"
+JAPANESE["MENU_EXTRAS_PSP_DLC_TSV"] =                   "PSP DLCs"
 
+JAPANESE["MENU_EXTRAS_INSTALL_DESC_DOWNLOAD_TSV"] =     "Download PKGj Database (TSV files)"
 JAPANESE["MENU_EXTRAS_CUSTOM_PKG_CONFIG_DESC"] =        "PKGJのconfig.txtでオプションのカスタマイズを許可します"
 JAPANESE["MENU_EXTRAS_CUSTOMBOOTSPLASH_DESC"] =         "起動時にカスタムイメージを設定できます"
 JAPANESE["MENU_EXTRAS_CUSTOMWARNING_DESC"] =            "ENSOで起動するときに、標準の警告メッセージの代わりにカスタムの警告メッセージを設定できます"
@@ -421,6 +431,7 @@ JAPANESE["INSTALLP_DESC_DT2S_STATUSBAR"] =              "(Recommended) This vers
 JAPANESE["INSTALLP_DESC_FRUITPEEL"] =                   "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
 
 --ALL
+JAPANESE["INSTALLP_DESC_VITANEARESTN"] =                "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 JAPANESE["INSTALLP_DESC_DT2S"] =                        "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"
 JAPANESE["INSTALLP_DESC_ITLSENSO"] =                    "Enso対応デバイスにTLS v1.2を追加します"
@@ -468,6 +479,7 @@ JAPANESE["INSTALLP_DESC_RESCREENY"] =                   "PSVitaのスクリー�
 JAPANESE["INSTALLP_DESC_DEPLAYENABLER"] =               "Enable video debug play mode with the ability to change sd0 and ux0 folder path from configuration file."
 
 --Comunes
+JAPANESE["PLUGINS_BOOT_WARNING"] =                      "If your ps vita gets to a bootloop or presents any conflicts between plugins, then keep L pressed while booting or when h-encore is installing, that will disable all plugins"
 JAPANESE["MISSING_PLUGIN"] =                            "The plugin is missing!"
 JAPANESE["REPAIR_CONFIG_TXT"] =                         "Henkaku plugins fixed in tai/config.txt"
 JAPANESE["REPAIR_CONFIG_SHARPSCALE"] =                  "Fix Sharpscale config crash!"
