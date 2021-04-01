@@ -1,4 +1,4 @@
-80FRENCH = {}
+FRENCH = {}
 
 --Updater
 FRENCH["UPDATER_AVAILABLE"] =                       "est maintenant disponible."

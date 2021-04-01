@@ -1,4 +1,4 @@
-9POLISH = {}
+POLISH = {}
 
 --Updater
 POLISH["UPDATER_AVAILABLE"] =                       "Teraz niedostępne"
