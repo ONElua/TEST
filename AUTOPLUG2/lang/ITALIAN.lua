@@ -16,6 +16,7 @@ ITALIAN["MENU_TITLE"] =                                 "AutoPlugin II"
 ITALIAN["MENU_PSVITA"] =                                "Plugin per PSVita"
 ITALIAN["MENU_PSP"] =                                   "Plugin per PSP (Adrenaline)"
 ITALIAN["MENU_EXTRAS"] =                                "Opzioni Extra"
+ITALIAN["MENU_DOWNLOADS"] =                             "Downloads"
 ITALIAN["MENU_SETTINGS"] =                              "Impostazioni"
 ITALIAN["MENU_EXIT"] =                                  "Esci"
 
@@ -29,9 +30,13 @@ ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =           "Controlla gli aggiornam
 
 ITALIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =           "Installa i plugin più utili della scena PSVITA"
 ITALIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =         "Disinstalla i plugin facilmente e semplicemente"
-ITALIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Installa il Plugin per SD2VITA (StorageMgr di CelesteBlue)"
-ITALIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =            "Configura il Plugin per SD2VITA (StorageMgr di CelesteBlue)"
+ITALIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =           "Installa il Plugin per SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
+ITALIAN["MENU_PSVITA_CONFIG_SD2VITA_DESC"] =            "Configura il Plugin per SD2VITA (StorageMgr v3.4 by CelesteBlue & Yoti)"
 ITALIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS_DESC"] =      "Controlla se ci sono nuovi plugin aggiornati"
+
+--Vita-Nearest-Neighbour
+ITALIAN["MENU_PSVITA_INSTALL_NEAREST"] =                "Vita Nearest Neighbour"
+ITALIAN["MENU_PSVITA_INSTALL_NEAREST_Q"] =              "\n\nDo you wish to install this plugin to a specific game ??\n\n Otherwise it will be installed to ALL section"
 
 --P4 Golden HD
 ITALIAN["MENU_PSVITA_INSTALL_P4G_HD"] =                 "Persona 4 Golden HD PATCH"
@@ -65,10 +70,12 @@ ITALIAN["MENU_PSP_PLUGINS_DESC"] =                      "Installa un plugin PSP 
 
 --Options Extras
 ITALIAN["MENU_EXTRAS_PKGJ_TITLE"] =                     "Opzioni per il file Config di PKGJ"
-ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO"] =               "Scarica e Installa iTLS-Enso vpk"
-ITALIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Scarica e Installa batteryFixer vpk"
-ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL"] =              "Download and install Vitashell vpk"
-ITALIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "Download and install ShaRKF00D vpk"
+ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO"] =               "Scarica e Installa iTLS-Enso"
+ITALIAN["MENU_EXTRAS_INSTALL_BATTFIX"] =                "Scarica e Installa batteryFixer"
+ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL"] =              "Download and install Vitashell"
+ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL2"] =             "Download and install Vitashell (from Yoti)"
+ITALIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "Download and install ShaRKF00D"
+ITALIAN["MENU_EXTRAS_INSTALL_YAMT"] =                   "Download and install Yamt"
 ITALIAN["MENU_EXTRAS_CONVERT_BOOTSPLASH"] =             "Imposta Custom Boot Splash"
 ITALIAN["MENU_EXTRAS_CUSTOM_WARNING"] =                 "Imposta Custom Warning Message"
 ITALIAN["MENU_EXTRAS_TRANSP_IMPOSE"] =                  "Modifica Transparent Impose"
@@ -93,6 +100,8 @@ ITALIAN["MENU_EXTRAS_CUSTOMWARNING_DESC"] =             "Consente di impostare u
 ITALIAN["MENU_EXTRAS_TRANSPIMPOSE_DESC"] =              "Consente di impostare valori di Livello di trasparente (255=0% trasparente, 0=100% trasparente) inferiore a 30 non è raccomandato"
 ITALIAN["MENU_EXTRAS_INSTALL_ITLSENSO_DESC"] =          "Consente il download e l'installazione di iTLS-Enso vpk su PSVita (aggiunge il TLS v1.2 ai dispositivi abilitati Enso)"
 ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL_DESC"] =         "Download and install Vitashell vpk in your Vita"
+ITALIAN["MENU_EXTRAS_INSTALL_VITASHELL2_DESC"] =        "Download and install Vitashell vpk in your Vita (From Yoti github)"
+ITALIAN["MENU_EXTRAS_INSTALL_YAMT_DESC"] =              "Download and install Yamt vpk in your Vita: Yet another (re)mount tool kernel plugin for PS Vita/PS TV (Requires Enso, compatible ONLY with firmware 3.60 and 3.65)"
 ITALIAN["MENU_EXTRAS_INSTALL_SHARKF00D"] =              "Download and install ShaRKF00D vpk"
 ITALIAN["MENU_EXTRAS_INSTALL_DESC_BATTFIX"] =           "Permette di scaricare e installare PSP2-batteryFixer vpk in Vita (risolve la maggior parte dei problemi relativi alla batteria della PSVita)"
 ITALIAN["MENU_EXTRAS_TRANSLATE_DESC"] =                 "Aiuta a migliorare AutoPlugin traducendo nella tua lingua!"
@@ -333,6 +342,12 @@ ITALIAN["TURKISH"] =                                    "TURCO"
 ITALIAN["INSTALLP_DESC_SD2VITA"] =                      "Plugin del kernel che monta/reindirizza automaticamente qualsiasi dispositivo di archiviazione su qualsiasi partizione desiderata (SD2VITA)"
 
 --KERNEL
+ITALIAN["INSTALLP_DESC_VSHPATCH"] =                     "Like repatch, but for system applications. this is an emulated VS0, simply put your changes you want to make into ux0:/vshPatch/ and then the changes will be reflected in vs0: partition, via the power of fios2"
+ITALIAN["INSTALLP_DESC_8BIVITA"] =                      "Basically just X1Vita but with 8bitdo vid, pid, & mappings. (Compatible 8bitdo controllers: Lite, Pro, Pro+, Pro 2, & Zero 2)"
+ITALIAN["INSTALLP_DESC_REAUTH"] =                       "reAuth allows you to use the PlayStation Store and sign in to the PlayStation Network on 3.60-3.65 (Enso is required-PSN spoofing turned on in Henkaku settings, and version spoof set to 3.73)"
+ITALIAN["INSTALLP_DESC_DUALSENSE"] =                    "This plugin allows you to use a DualSense controller in the same way as a Dualshock 4 controller on a PlayStation TV, or on a PlayStation Vita with MiniVitaTV"
+ITALIAN["INSTALLP_DESC_X1VITA"] =                       "Control your vita with Xbox one controllers! This plugin is not compatible with the other ds vita plugins yet!!!!"
+ITALIAN["INSTALLP_DESC_RESAVEDATA"] =                   "Plugin that redirects savedata such as games to ux0:resavedata without pfs encryption. (Redirected only if the directory with the title id exists in ux0:resavedata/ like ux0:resavedata/PCSG00001/)"
 ITALIAN["INSTALLP_DESC_KUBRIDGE"] =                     "Kernel-user bridge module for PS Vita (Needed for ported MaxPayne game)"
 ITALIAN["INSTALLP_DESC_NONPDRM"] =                      "Permette di bypassare la protezione DRM su qualsiasi contenuto PS Vita"
 ITALIAN["INSTALLP_DESC_NONPDRMU"] =                     "Ti permette di bypassare la protezione DRM su qualsiasi contenuto PS Vita (MOD non ufficiale)"
@@ -341,12 +356,14 @@ ITALIAN["INSTALLP_DESC_MINIVITATV_DS3"] =               "Ds3 (Plugin required fo
 ITALIAN["INSTALLP_DESC_NOPSMDRM"] =                     "Permette di bypassare la protezione DRM sui contenuti di gioco PSM"
 ITALIAN["INSTALLP_DESC_VITABRIGHT"] =                   "Plugin che consente di utilizzare una tabella gamma personalizzata e quindi ridurre la luminosità al di sotto del minimo e aumentarla al di sopra del massimo"
 ITALIAN["INSTALLP_DESC_NOAVLS"] =                       "Plugin che disabiliterà permanentemente AVLS su PSVITA"
+ITALIAN["INSTALLP_DESC_REPATCHEX"] =                    "Modification of rePatch that adds Homebrew app0: and ux0:/data migration to other partitions, allowing you to play games with data on different storage."
 ITALIAN["INSTALLP_DESC_REPATCH"] =                      "Consente il modding dei giochi crittografati (simile a ux0:patch) e consente di patchare un gioco per bypassare il requisito minimo del firmware"
 ITALIAN["INSTALLP_DESC_REPATCH271"] =                   "Versione precedente di rePATCH che risolve alcuni problemi con la versione 3.0"
 ITALIAN["INSTALLP_DESC_LOLICON"] =                      "Plugin che consente l'overclocking della PSVITA a 500 MHz (Prestare molta attenzione) (SELECT + TASTO SU abilita menu. SELECT + TASTO GIU chiude il menu)"
 ITALIAN["INSTALLP_DESC_DS3VITA"] =                      "Controlla la tua PSVita utilizzando un DualShock 3"
 ITALIAN["INSTALLP_DESC_DS4VITA"] =                      "Controlla la tua PSVita utilizzando un DualShock 4"
 ITALIAN["INSTALLP_DESC_DS34VITA"] =                     "Combines functionality of xerpi's ds4vita and ds3vita. Alows to use up to two controllers at the same time."
+ITALIAN["INSTALLP_DESC_DS5VITA"] =                      "Plugin to use PS5 dualsense on PSVITA"
 ITALIAN["INSTALLP_DESC_REVITA"] =                       "reVita is a plugin for PS Vita / PS TV, which allows you to remap inputs and trigger different actions. It is a continuation of Rinnegatamante's remaPSV, which was fully rewritten as a kernel plugin. (To bring the config menu, press START + SQUARE, customisable under Settings -> Hotkeys.)"
 ITALIAN["INSTALLP_DESC_REVITA_GYRO"] =                  "Add Gyro support ?"
 ITALIAN["INSTALLP_DESC_UDCDUVC"] =                      "Consente di trasmettere in streaming la schermata della tua PSVita sul tuo PC"
@@ -379,6 +396,8 @@ ITALIAN["INSTALLP_DESC_DERIN"] =                        "Plugin che permette di 
 ITALIAN["INSTALLP_DESC_LOLITA"] =                       "Imposta il clock PSVita al massimo per tutto il tempo e disabilita le limitazioni come bassa luminosità e nessuna connessione Wi-Fi nei giochi intensivi"
 ITALIAN["INSTALLP_DESC_LOLITA4"] =                      "Imposta il clock PSVita su 444 mhz per tutto il tempo e disabilita le limitazioni come bassa luminosità e nessuna connessione Wi-Fi su giochi intensivi."
 ITALIAN["INSTALLP_DESC_PSVSHELL"] =                     "Un altro plugin per overcloccare la PSVITA(SELECT + TASTO SU o SELECT + TASTO GIU per alternare tra 3 modalità GUI)"
+ITALIAN["INSTALLP_DESC_PSVSHELLPLUS"] =                 "Advanced Overclock&Info plugin for PS Vita. Provides fully GPU accelerated HUD, accurate memory and FPS tracking with full Quick Menu integration."
+ITALIAN["INSTALLP_DESC_POCKETSTATION"] =                "Forces pocketstation support on all PS1 Classics"
 ITALIAN["INSTALLP_DESC_SYSCALL6"] =                     "Un plugin che patcha il lv0 della Playstation Vita nel secure_kernel syscall 6 (Controlla SELF/RVK)"
 ITALIAN["INSTALLP_DESC_MONAURAL"] =                     "Audio mono e bilanciamento dei canali per Playstation Vita(richiede MonauralConfig.vpk)"
 ITALIAN["INSTALLP_DESC_MUPREMIUM"] =                    "Abilita la riproduzione di musica in sottofondo per qualsiasi gioco o applicazione."
@@ -402,6 +421,8 @@ ITALIAN["INSTALLP_DESC_BOOTSPLASH_DONE"] =              "boot_splash.bin CREATO 
 ITALIAN["INSTALLP_DESC_BOOTSPLASH_FAIL"] =              "boot_splash.bin FALLITO !!!"
 
 --Main
+ITALIAN["INSTALLP_DESC_PASTEUNLOCK"] =                  "Plugin for PS Vita that unlocks hidden copy/paste feature in system software. To activate copypaste popup press and hold your finger on the text until it zooms in. After that release your finger from the screen and copypaste popup will open."
+ITALIAN["INSTALLP_DESC_USBDISABLE"] =                   "Disable the annoying 'Connecting' dialog when you connect the vita to a computer. (Q)CMA still work!!"
 ITALIAN["INSTALLP_DESC_DENABLER"] =                     "Permette di scaricare i file dal tuo browser"
 ITALIAN["INSTALLP_DESC_NOLOCKSCREEN"] =                 "Disattiva la schermata di blocco su PSVita"
 ITALIAN["INSTALLP_DESC_NOTROPHYMSG"] =                  "Disabilita il messaggio dei suggerimenti dei trofei quando lanci un'applicazione collegato a un altro account. Utile se cambi continuamente account"
@@ -429,6 +450,7 @@ ITALIAN["INSTALLP_DESC_BOOTSOUND"] =             	    "This plugin can play a WA
 ITALIAN["INSTALLP_DESC_QUICKMENU"] =             	    "Quick Menu Plus merges Quick Power, Quick Volume, and Rapidmenu, as well as adding new features. Power off, restart, and standby buttons, Configurable power buttons, Volume slidebar, Faster Quick Menu open time, Custom background styles."
 ITALIAN["INSTALLP_DESC_DT2S_STATUSBAR"] =               "(Recommended) This version only works if you touch the very top part of your touchscreen. In SceShell (homescreen) this would be the status bar. This works more similarly to Android's double tap to sleep feature which is used on the status bar."
 ITALIAN["INSTALLP_DESC_FRUITPEEL"] =                    "Change lockscreen background wallpaper (PNG with 8 bit palette non-interlaced. Up to a maximum size of 896x448. The file size up to a maximum of 512 KiB)"
+ITALIAN["INSTALLP_DESC_QUICKLAUNCHER"] =                "A Plugin to add buttons to quickly launch apps in the quickmenu. Made using QuickMenuReborn."
 
 --ALL
 ITALIAN["INSTALLP_DESC_VITANEARESTN"] =                 "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
@@ -505,3 +527,4 @@ ITALIAN["SYSTEM_ERROR"] =                               "System Error"
 ITALIAN["SYSTEM_ERROR_REPO"] =                          "Please report this error to Autoplugin2 Repo at Onelua Github"
 ITALIAN["SYSTEM_ERROR_FIX"] =                           "Or fix the error in the file´s text line found at the path mentioned above (ux0:path/file.lua:line number)"
 ITALIAN["ERROR_LOADING_FILE"] =                         "Error loading file"
+ITALIAN["DOWNLOAD_PLUGINS"] =                           "Downloading database plugins"
