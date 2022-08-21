@@ -1,4 +1,4 @@
-plugins = {
+Online_Plugins = {
 
 --Kernel [SECTION]
 { name = "Adrenaline by TheOfficialFloW (Fix double touch)", id = "ADRENALINE.png", path = "adrenaline_kernel.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_ADRENALINE"], KEY = "INSTALLP_DESC_ADRENALINE", link = "https://raw.githubusercontent.com/TheOfficialFloW/Adrenaline/master/readme.md", },
