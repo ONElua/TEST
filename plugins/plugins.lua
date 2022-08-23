@@ -115,6 +115,7 @@ Online_Plugins = {
 --with config&configpath
 { name = "TransparentImpose v1.0 by GrapheneCt", id = "TRANSIMPOSE.png", path = "TrImpose.suprx", section = "main", config = "trimpose.txt", configpath = "ur0:data/", version = "0001", desc = LANGUAGE["INSTALLP_DESC_TRIMPOSE"], KEY = "INSTALLP_DESC_TRIMPOSE", link = "https://raw.githubusercontent.com/GrapheneCt/TransparentImpose/master/README.md", },
 { name = "QuickLauncher by Ibrahim778 v1.2 (QuickMenuReborn)", id = "QUICKLAUNCHER.png", path = "QuickMenuReborn.suprx", section = "main", version = "0001", config = "QuickMenuReborn.zip", configpath = "ur0:/", dl = "QuickMenuReborn.zip", desc = LANGUAGE["INSTALLP_DESC_QUICKLAUNCHER"], KEY = "INSTALLP_DESC_QUICKLAUNCHER", link = "https://raw.githubusercontent.com/Ibrahim778/QuickLauncher/master/README.md", },
+{ name = "psp2wpp v1.0 by Princess of Sleeping", id = "PSP2WPP.png", path = "psp2wpp.suprx", section = "main", config = "waveparam.txt", configpath = "ux0:data/", version = "0001", desc = "OLAs", KEY = "OLAs", dl = "waveparam.bin", link = "https://raw.githubusercontent.com/Princess-of-Sleeping/psp2wpp/master/README.md", },
 --with vpk
 { name = "ftpeverywhere v1.0 by teakhanirons", id = "FTPEVERYWHERE.png", path = "ftpeverywhere.suprx", section = "main", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FTPEVERYWHERE"], KEY = "INSTALLP_DESC_FTPEVERYWHERE", link = "https://raw.githubusercontent.com/teakhanirons/ftpeverywhere/master/README.md", },
 --2 prxs
