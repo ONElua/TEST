@@ -179,6 +179,6 @@ Online_Plugins = {
 { name = "Vita-Nearest-Neighbour v1.0 by MuxaJlbl4", id = "VITANEARESTN.png", path = "VitaNearestNeighbour.suprx", version = "0001", desc = LANGUAGE["INSTALLP_DESC_VITANEARESTN"], KEY = "INSTALLP_DESC_VITANEARESTN", link = "https://raw.githubusercontent.com/MuxaJlbl4/Vita-Nearest-Neighbour/main/README.md", REMOVE = true, },
 
 -- GameSDCard
-{ name = "StorageMgr v3.4 by CelesteBlue & Yoti (SD2VITA)", path = "storagemgr.skprx", version = "0001", desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"], KEY = "MENU_PSVITA_INSTALL_SD2VITA_DESC", link = "https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md", REMOVE = true, },
+{ name = "StorageMgr v3.4 by CelesteBlue & Yoti (SD2VITA)", path = "storagemgr.skprx", section = "KERNEL", version = "0001", desc = LANGUAGE["MENU_PSVITA_INSTALL_SD2VITA_DESC"], KEY = "MENU_PSVITA_INSTALL_SD2VITA_DESC", link = "https://raw.githubusercontent.com/RealYoti/StorageMgr/master/README.md", REMOVE = true, },
 
 }
