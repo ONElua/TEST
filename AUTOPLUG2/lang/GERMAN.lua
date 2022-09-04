@@ -201,6 +201,7 @@ GERMAN["UPDATE_CHECK_DB"] =                         "Datenbank überprüfen"
 GERMAN["UPDATE_PLUGIN"] =                           "Plugins aktualisiert"
 GERMAN["UPDATE_ERROR_DB"] =                         "Fehler beim Herunterladen von db.lua"
 GERMAN["UPDATE_NO_NEWS"] =                          "Alle Plugins sind auf dem neuesten Stand"
+GERMAN["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 GERMAN["NPDRMFREE_TITLE"] =                         "Das Plugin 'npdrm free' (von qwikrazor87) installieren"

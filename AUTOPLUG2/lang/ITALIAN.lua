@@ -201,6 +201,7 @@ ITALIAN["UPDATE_CHECK_DB"] =                            "Controllo Database"
 ITALIAN["UPDATE_PLUGIN"] =                              "Aggiornamento Plugin"
 ITALIAN["UPDATE_ERROR_DB"] =                            "Errore nello scaricamento del file db.lua"
 ITALIAN["UPDATE_NO_NEWS"] =                             "Tutti i plugin sono aggiornati"
+ITALIAN["UPDATE_QUESTION"] =                            "is installed\n\nWould you like to update it?"
 
 --npdrm free
 ITALIAN["NPDRMFREE_TITLE"] =                            "Installa il plugin NPDRM FREE di qwikrazor87"

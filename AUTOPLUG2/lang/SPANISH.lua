@@ -201,6 +201,7 @@ SPANISH["UPDATE_CHECK_DB"] =                            "Comprobando Base de Dat
 SPANISH["UPDATE_PLUGIN"] =                              "Plugin Actualizado"
 SPANISH["UPDATE_ERROR_DB"] =                            "Error al descargar db.lua"
 SPANISH["UPDATE_NO_NEWS"] =                             "Todos los plugins están actualizados"
+SPANISH["UPDATE_QUESTION"] =                            "is installed\n\nWould you like to update it?"
 
 --npdrm free
 SPANISH["NPDRMFREE_TITLE"] =                            "Instalar plugin NPDRM FREE de qwikrazor87"

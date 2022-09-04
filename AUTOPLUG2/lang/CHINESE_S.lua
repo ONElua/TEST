@@ -201,6 +201,7 @@ CHINESE_S["UPDATE_CHECK_DB"] =                         "正在检查数据库"
 CHINESE_S["UPDATE_PLUGIN"] =                           "已更新插件"
 CHINESE_S["UPDATE_ERROR_DB"] =                         "db.lua 下载出错"
 CHINESE_S["UPDATE_NO_NEWS"] =                          "所有插件均已更新"
+CHINESE_S["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 CHINESE_S["NPDRMFREE_TITLE"] =                         "安装 NPDRM FREE 插件 (由 qwikrazor87 开发)"

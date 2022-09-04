@@ -201,6 +201,7 @@ PORTUGUESE_BR["UPDATE_CHECK_DB"] =                         "Verificando banco de
 PORTUGUESE_BR["UPDATE_PLUGIN"] =                           "Plugin atulizado"
 PORTUGUESE_BR["UPDATE_ERROR_DB"] =                         "Erro ao baixar arquivo db.lua"
 PORTUGUESE_BR["UPDATE_NO_NEWS"] =                          "Todos os plugins estão atualizados"
+PORTUGUESE_BR["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 PORTUGUESE_BR["NPDRMFREE_TITLE"] =                         "Instalar puglin NPDRM FREE do qwikrazor87"

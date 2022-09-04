@@ -201,6 +201,7 @@ POLISH["UPDATE_CHECK_DB"] =                         "Sprawdzanie bazy danych"
 POLISH["UPDATE_PLUGIN"] =                           "Aktualizowanie pluginu"
 POLISH["UPDATE_ERROR_DB"] =                         "Błąd pobierania db.lua"
 POLISH["UPDATE_NO_NEWS"] =                          "Wszystkie pluginy zostały zaktualizowane"
+POLISH["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 POLISH["NPDRMFREE_TITLE"] =                         "Zainstaluj plugin NPDRM FREE od qwikrazor87"

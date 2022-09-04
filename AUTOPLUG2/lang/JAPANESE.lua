@@ -201,6 +201,7 @@ JAPANESE["UPDATE_CHECK_DB"] =                           "データベースの�
 JAPANESE["UPDATE_PLUGIN"] =                             "プラグインを更新しました"
 JAPANESE["UPDATE_ERROR_DB"] =                           "db.luaのダウンロードエラー"
 JAPANESE["UPDATE_NO_NEWS"] =                            "すべてのプラグインは最新です"
+JAPANESE["UPDATE_QUESTION"] =                           "is installed\n\nWould you like to update it?"
 
 --npdrm free
 JAPANESE["NPDRMFREE_TITLE"] =                           "NPDRM FREEプラグインをインストールする (by qwikrazor87)"

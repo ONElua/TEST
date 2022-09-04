@@ -201,6 +201,7 @@ RUSSIAN["UPDATE_CHECK_DB"] =                         "Проверка базы 
 RUSSIAN["UPDATE_PLUGIN"] =                           "Обновлён плагин"
 RUSSIAN["UPDATE_ERROR_DB"] =                         "Ошибка при загрузке db.lua"
 RUSSIAN["UPDATE_NO_NEWS"] =                          "Все плагины уже обновлены"
+RUSSIAN["UPDATE_QUESTION"] =                         "is installed\n\nWould you like to update it?"
 
 --npdrm free
 RUSSIAN["NPDRMFREE_TITLE"] =                         "Плагин npdrm_free от qwikrazor87"
