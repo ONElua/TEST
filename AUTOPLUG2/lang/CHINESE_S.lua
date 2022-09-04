@@ -56,7 +56,7 @@ CHINESE_S["INSTALL_CATHERINE_HD_TITLE"] =              "凯瑟琳浓郁口感高
 CHINESE_S["NO_CHATERINE_GAMES"] =                      "找不到 凯瑟琳浓郁口感 游戏本体"
 CHINESE_S["INSTALLING_CATHERINE_HD_PATCH"] =           "正在安装 凯瑟琳浓郁口感 高清补丁"
 
-CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. 安装最新版本的 Sharpscale \n\n 2. 在 sharpscale 配置程序中启用 '解锁帧缓冲区大小 Unlock framebuffer size' 选项 \n\n 3. 需要超频以获得良好的性能 (我们推荐使用 LOLIcon 或者 lolita444/500)"
+CHINESE_S["INSTRUCTIONS_HD_PATCH"] =                   " 1. 安装最新版本的 Sharpscale \n\n 2. 在 sharpscale 配置程序中启用 '解锁帧缓冲区大小 Unlock framebuffer size' 选项 \n\n 3. 需要超频以获得良好的性能 (我们推荐使用 PSVshell+)"
 
 --Options PSP
 CHINESE_S["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) 插件"

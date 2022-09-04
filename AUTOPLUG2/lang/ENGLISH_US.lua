@@ -56,7 +56,7 @@ ENGLISH_US["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD 
 ENGLISH_US["NO_CHATERINE_GAMES"] =                      "Catherine Full Body not found"
 ENGLISH_US["INSTALLING_CATHERINE_HD_PATCH"] =           "Installing Catherine Full Body HD"
 
-ENGLISH_US["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend LOLIcon or lolita444/500)"
+ENGLISH_US["INSTRUCTIONS_HD_PATCH"] =                   " 1. Install the latest version of Sharpscale \n\n 2. Turn on 'Unlock framebuffer size' in the sharpscale config app \n\n 3. Overclocking is required for good performance (we recommend PSVshell+)"
 
 --Options PSP
 ENGLISH_US["MENU_PSP_TITLE"] =                          "PSP (Adrenaline) Plugins"

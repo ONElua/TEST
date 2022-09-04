@@ -56,7 +56,7 @@ FRENCH["INSTALL_CATHERINE_HD_TITLE"] =              "Patch HD Catherine Full Bod
 FRENCH["NO_CHATERINE_GAMES"] =                      "\n\nJeu Catherine Full Body non trouver"
 FRENCH["INSTALLING_CATHERINE_HD_PATCH"] =           "Installation du patch HD en cours..."
 
-FRENCH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Installer la dernière version du plugin Sharpscale \n\n 2. Mettre ON sur 'Unlock framebuffer size' dans les paramètres du plugin \n\n 3. L'overclocking est recommander pour de bonnes performances (nous recommandons le plugin LOLIcon ou lolita444/500)"
+FRENCH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Installer la dernière version du plugin Sharpscale \n\n 2. Mettre ON sur 'Unlock framebuffer size' dans les paramètres du plugin \n\n 3. L'overclocking est recommander pour de bonnes performances (nous recommandons le plugin PSVshell+)"
 
 --Options PSP
 FRENCH["MENU_PSP_TITLE"] =                          "Plugins PSP pour Adrenaline"

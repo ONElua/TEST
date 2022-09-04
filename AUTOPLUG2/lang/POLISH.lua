@@ -56,7 +56,7 @@ POLISH["INSTALL_CATHERINE_HD_TITLE"] =              "Catherine Full Body HD by C
 POLISH["NO_CHATERINE_GAMES"] =                      "Nie znaleziono Catherine Full Body"
 POLISH["INSTALLING_CATHERINE_HD_PATCH"] =           "Instalacja Catherine Full Body HD"
 
-POLISH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Zainstaluj najnowszą wersje pluginu Sharpscale \n\n 2. Włącz 'Odblokowanie bufora ramki' w sharpscale  \n\n 3. Polecany jest Overclocking dla lepszych wrażeń (Rekomendowane pliginy to LOLIcon i lolita444/500)"
+POLISH["INSTRUCTIONS_HD_PATCH"] =                   " 1. Zainstaluj najnowszą wersje pluginu Sharpscale \n\n 2. Włącz 'Odblokowanie bufora ramki' w sharpscale  \n\n 3. Polecany jest Overclocking dla lepszych wrażeń (Rekomendowane pliginy to PSVshell+)"
 
 --Options PSP
 POLISH["MENU_PSP_TITLE"] =                          "Pluginy dla PSP (Adrenaline)"
