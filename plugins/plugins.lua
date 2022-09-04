@@ -77,7 +77,7 @@ Online_Plugins = {
 --2 prxs
 { name = "DSMotion by OperationNT414C v1.2", id = "DSMOTION.png", path = "dsmotion.skprx", section = "KERNEL", path2 = "dsmotion.suprx", section2 = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_DSMOTION"], KEY = "INSTALLP_DESC_DSMOTION", link = "https://raw.githubusercontent.com/OperationNT414C/DSMotion/master/README.md", },
 { name = "MiniVitaTV by TheOfficialFloW beta 0.4", id = "MINIVITATV.png", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
-{ name = "reVita by MERLev v1.0.8", id = "REVITA.png", path = "reVita.skprx", section = "KERNEL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0003", desc = LANGUAGE["INSTALLP_DESC_REVITA"], KEY = "INSTALLP_DESC_REVITA", link = "https://raw.githubusercontent.com/MERLev/reVita/master/README.md", },
+{ name = "reVita by MERLev v1.0.8", id = "REVITA.png", path = "reVita.skprx", section = "KERNEL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0003", dl = "reVitaMotion.suprx", desc = LANGUAGE["INSTALLP_DESC_REVITA"], KEY = "INSTALLP_DESC_REVITA", link = "https://raw.githubusercontent.com/MERLev/reVita/master/README.md", },
 --with config&configpath&2 prxs
 { name = "PSVshellPlus by GrapheneCt v1.2", id = "PSVSHELLPLUS.png", path = "PSVshellPlus_Kernel.skprx", section = "KERNEL", path2 = "PSVshellPlus_Shell.suprx", section2 = "main", config = "PSVshell.zip", configpath = "ur0:data/", version = "0001", tai_del1 = "PSVshell.skprx", section_del1 = "KERNEL", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
 
@@ -160,7 +160,7 @@ Online_Plugins = {
 
 --NPXS10015 and *NPXS10016
 { name = "vita-macspoofer by Freakler", id = "MACSPOOFER.png", path = "macspoofer.suprx", section = "NPXS10015", path2 = "macspoofer.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MACSPOOF"], KEY = "INSTALLP_DESC_MACSPOOF", link = "https://raw.githubusercontent.com/Freakler/vita-macspoofer/master/README.md", },
-{ name = "Sysident by cuevavirus v1.1", id = "SYSIDENT.png", path = "sysident.suprx", section = "NPXS10015", path2 = "sysident.suprx", section2 = "NPXS10016", version = "0001", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"], KEY = "INSTALLP_DESC_SYSIDENT", link = "https://raw.githubusercontent.com/cuevavirus/sysident/master/README.md", },
+{ name = "Sysident by cuevavirus v1.1", id = "SYSIDENT.png", path = "sysident.suprx", section = "NPXS10015", path2 = "sysident.suprx", section2 = "NPXS10016", version = "0001", dl = "sysident.skprx", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"], KEY = "INSTALLP_DESC_SYSIDENT", link = "https://raw.githubusercontent.com/cuevavirus/sysident/master/README.md", },
 
 --NPXS10036
 { name = "reScreeny by dots_tb v1.2", id = "RESCREENY.png", path = "reScreeny.suprx", section = "NPXS10036", version = "0001", desc = LANGUAGE["INSTALLP_DESC_RESCREENY"], KEY = "INSTALLP_DESC_RESCREENY", link = "https://raw.githubusercontent.com/dots-tb/reScreeny/master/README.md", },
