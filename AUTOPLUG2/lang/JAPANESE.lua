@@ -27,7 +27,9 @@ JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS"] =             "プラグインのア�
 JAPANESE["MENU_PSVITA_INSTALL_SD2VITA"] =               "SD2VITAプラグインのインストール"
 JAPANESE["MENU_PSVITA_CONFIGURE_SD2VITA"] =             "SD2VITAプラグインの構成"
 JAPANESE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =          "プラグインの更新を確認"
+JAPANESE["MENU_PSVITA_HD_PATCH"] =                      "HD Patches"
 
+JAPANESE["MENU_PSVITA_HD_PATCH_DESC"] =                 "HD patches some for psvita games"
 JAPANESE["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =          "SCENE-PSVITAによって作成された最も便利なプラグインをインストールします"
 JAPANESE["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =        "プラグインを簡単かつ容易にアンインストールします"
 JAPANESE["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =          "SD2VITAプラグインのインストール (StorageMgr v3.4 by CelesteBlue & Yoti)"

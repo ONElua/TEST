@@ -27,7 +27,9 @@ RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS"] =           "Удалить плаги�
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA"] =             "Установить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CONFIGURE_SD2VITA"] =           "Настроить плагин для SD2VITA"
 RUSSIAN["MENU_PSVITA_CHECK_ONLINE_PLUGINS"] =        "Проверить обновления плагинов"
+RUSSIAN["MENU_PSVITA_HD_PATCH"] =                    "HD Patches"
 
+RUSSIAN["MENU_PSVITA_HD_PATCH_DESC"] =               "HD patches some for psvita games"
 RUSSIAN["MENU_PSVITA_INSTALL_PLUGINS_DESC"] =        "Установить наиболее полезные плагины, созданные сценой PS Vita"
 RUSSIAN["MENU_PSVITA_UNINSTALL_PLUGINS_DESC"] =      "Легко и просто удалить установленные плагины"
 RUSSIAN["MENU_PSVITA_INSTALL_SD2VITA_DESC"] =        "Установить плагин для SD2VITA (StorageMgr v3.4 от CelesteBlue & Yoti)"
