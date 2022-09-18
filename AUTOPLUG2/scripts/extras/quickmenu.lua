@@ -86,7 +86,8 @@ function config_quickmenu()
 
 		if back2 then back2:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_EXTRAS_QUICKMENU_PLUS"],1.2,color.white,0x0,__ACENTER)
 
 		draw.fillrect(0,64,960,322,color.shine:a(25))

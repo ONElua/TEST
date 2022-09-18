@@ -32,14 +32,14 @@ function update_lang(tb)
 				if string.upper(Langs[i].id) == string.upper(Online_Langs[j].id) then
 					if tonumber(Langs[i].version) < tonumber(Online_Langs[j].version) then
 						__file = Online_Langs[j].id
-						os.message("Online_Langs\n"..tmpdir..Online_Langs[j].id..".lua")
+						--os.message("Online_Langs\n"..tmpdir..Online_Langs[j].id..".lua")
 						local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[j].id), tmpdir..Online_Langs[j].id..".lua")
 						if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
 							files.move(tmpdir..Online_Langs[j].id..".lua","lang/")
 							Langs[i] = Online_Langs[j]
 							if tb then table.insert(tb,Langs[i]) end
 							__flag = true
-							os.message("lang/"..Online_Langs[j].id..".lua")
+							--os.message("lang/"..Online_Langs[j].id..".lua")
 						else
 							os.message(LANGUAGE["LANG_ONLINE_FAILDB"].."\n\n"..LANGUAGE["UPDATE_WIFI_IS_ON"])
 						end
@@ -66,12 +66,12 @@ function update_lang(tb)
 		if not __find then
 			__file = Online_Langs[i].id
 			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), tmpdir..Online_Langs[i].id..".lua")
-				os.message("Online_Langs 2\n"..Online_Langs[i].id)
+				--os.message("Online_Langs 2\n"..Online_Langs[i].id)
 				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
 				table.insert(tmps, { line = i })
 				__flag = true
 				files.move(tmpdir..Online_Langs[i].id..".lua","lang/")
-				os.message("lang/"..Online_Langs[i].id..".lua")
+				--os.message("lang/"..Online_Langs[i].id..".lua")
 			end
 		end
 
@@ -89,30 +89,13 @@ function update_lang(tb)
 		files.delete(tmpdir.."Langdatabase.lua")
 		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/Langdatabase.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."Langdatabase.lua")
 		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."Langdatabase.lua") then
-			files.move(tmpdir.."Langdatabase.lua","lang")
+			files.move(tmpdir.."Langdatabase.lua","lang/")
 			dofile("lang/Langdatabase.lua")--Official
 			if #Langs > 1 then table.sort(Langs ,function (a,b) return string.lower(a.id)<string.lower(b.id) end) end
-			--update_database("lang/Langdatabase.lua",Langs)
 			load_translates()
 		end
 	end
 
-end
-
-function update_database(database,tb)
-
-	local file = io.open(database, "w+")
-
-    file:write("Langs = {\n")
-
-	for s,t in pairs(tb) do
-		file:write(string.format('{ id =  "%s",		version = "%s",		author =  "%s" },\n', tostring(t.id), tostring(t.version), tostring(t.author)))
-	end
-
-	file:write("}\n")
-	file:close()
-	dofile("lang/Langdatabase.lua")--Official
-	load_translates()
 end
 
 function lang_online()
@@ -139,7 +122,8 @@ function lang_online()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_LANG_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then

@@ -103,7 +103,8 @@ function psp_ctrls()
 
 		if back2 then back2:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["PSPCTRLS_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		screen.print(13, 65, " ("..scroll.maxim..")", 1, color.yellow, 0x0)

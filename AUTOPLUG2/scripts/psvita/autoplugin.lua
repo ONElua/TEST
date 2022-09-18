@@ -18,11 +18,15 @@ function plugins_installation(obj)
 	elseif obj.path == "custom_warning.suprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif obj.path == "reVita.skprx" and ( version == "3.67" or version == "3.68" or version == "3.73") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	elseif obj.path == "pspemu-colour-crunch.skprx" and hw.model() != "Vita Slim" then os.message(LANGUAGE["INSTALLP_LCDCOLOURSPACECHANGE"])
+	elseif obj.path == "PSVshellPlus_Kernel.skprx" and ( version != "3.60" and version != "3.65") then os.message(LANGUAGE["INSTALLP_CWARNING_360_365"])
 	else
 
 		--Aqui checaremos posibles conflictos de plugins
 		if obj.path == "sharpscale.skprx" and not tai.check("!AKRK00005") then
 			tai.putBeforeSection("ALL","*!AKRK00005","")
+
+		elseif obj.path == "vsh.suprx" and not tai.check("!PSPEMUCFW") then
+			tai.putBeforeSection("ALL","*!PSPEMUCFW","")
 
 		elseif obj.path == "hide-autoplugin.suprx" then
 			if not tai.check("!1MENUVITA") and game.exists("1MENUVITA") then
@@ -338,14 +342,14 @@ function autoplugin()
 		screen.print(10,15,LANGUAGE["LIST_PLUGINS"].." "..#tb_cop,1,color.white)
 
 		--Partition
-		draw.fillrect(860,0,100,40, color.green:a(90))
-		screen.print(930, 12, "ur0:", 1, color.white, color.blue, __ARIGHT)
+		draw.fillrect(860,0,100,47, color.green:a(90))
+		screen.print(930, 14, "ur0:", 1, color.white, color.blue, __ARIGHT)
 
 		--List of Plugins
-		local y = 64
+		local y = 62
 		for i=scr.ini,scr.lim do
 
-			if i == scr.sel then draw.offsetgradrect(3,y-9,944,31,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
+			if i == scr.sel then draw.offsetgradrect(3,y-9,944,33,color.shine:a(75),color.shine:a(135),0x0,0x0,21) end
 
 			idx = tai.find(tb_cop[i].section,tb_cop[i].path)
 			if idx != nil then
@@ -357,10 +361,10 @@ function autoplugin()
 			end
 
 			if tb_cop[i].path2 == "kuio.skprx" or tb_cop[i].path2 == "ioplus.skprx" then
-				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(125),__ALEFT)
+				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)--125
 				screen.print(895,y, " ("..tb_cop[i].path2.." )", 1.0,color.yellow,color.blue,__ARIGHT)
 			else
-				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(125),__ALEFT)
+				screen.print(40,y, tb_cop[i].name, 1.2,color.white,color.blue:a(175),__ALEFT)
 			end
 
 			y+=36
@@ -384,16 +388,16 @@ function autoplugin()
 		end
 
 		if tb_cop[scr.sel].section then
-		screen.print(950, 433, tb_cop[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
+		screen.print(950, 435, tb_cop[scr.sel].section,1,color.yellow, 0x0,__ARIGHT)
 		end
 		if tb_cop[scr.sel].path then
-		screen.print(950, 455, tb_cop[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
+		screen.print(950, 457, tb_cop[scr.sel].path,1,color.yellow, 0x0,__ARIGHT)
 		end
 		if tb_cop[scr.sel].section2 then
-			screen.print(950, 480, tb_cop[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
+			screen.print(950, 482, tb_cop[scr.sel].section2,1,color.yellow, 0x0,__ARIGHT)
 		end
 		if tb_cop[scr.sel].path2 then
-			screen.print(950, 500, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
+			screen.print(950, 502, tb_cop[scr.sel].path2,1,color.yellow, 0x0,__ARIGHT)
 		end
 
 		if buttonskey then buttonskey:blitsprite(10,448,__TRIANGLE) end
@@ -445,6 +449,52 @@ function autoplugin()
 				if back2 then back2:blit(0,0) end
 					message_wait()
 				os.delay(1000)
+
+				local vbuff = screen.buffertoimage()
+
+				local onNetGetFileOld = onNetGetFile
+				onNetGetFile = nil
+
+				local SCREENSHOT,img = nil,nil
+				if tb_cop[scr.sel].id then
+					SCREENSHOT = string.format("https://raw.githubusercontent.com/%s/%s/master/screenshots/%s", APP_REPO, APP_PROJECT, tb_cop[scr.sel].id)
+					img = image.load(screenshots..tb_cop[scr.sel].id)
+					if not img then
+						if http.download(SCREENSHOT, screenshots..tb_cop[scr.sel].id).headers.status_code == 200 then
+							img = image.load(screenshots..tb_cop[scr.sel].id)
+						else files.delete(screenshots..tb_cop[scr.sel].id)
+						end
+					end
+					if img then img:setfilter(__IMG_FILTER_LINEAR, __IMG_FILTER_LINEAR) end
+				end
+
+				if tb_cop[scr.sel].link and not tb_cop[scr.sel].status then
+					tb_cop[scr.sel].readme = http.get(tb_cop[scr.sel].link)
+					if not tb_cop[scr.sel].readme then
+						local res = http.download(tb_cop[scr.sel].link,"ux0:data/AUTOPLUGIN2/tmp.txt")
+						if res.headers and res.headers.status_code == 200 and files.exists("ux0:data/AUTOPLUGIN2/tmp.txt") then
+							tb_cop[scr.sel].readme = files.read("ux0:data/AUTOPLUGIN2/tmp.txt")
+						end
+						files.delete("ux0:data/AUTOPLUGIN2/tmp.txt")
+					end
+					if not tb_cop[scr.sel].readme then tb_cop[scr.sel].status = false else tb_cop[scr.sel].status = true end
+				end
+
+				os.dialog(tb_cop[scr.sel].readme or LANGUAGE["PLUGINS_NO_README_ONLINE"], tb_cop[scr.sel].name.."\n")
+
+				if img then
+					if vbuff then vbuff:blit(0,0) elseif back2 then back2:blit(0,0) end
+					img:scale(85)
+					img:center()
+					img:blit(480,272)
+					screen.flip()
+					buttons.waitforkey()
+					os.delay(150)
+				end
+
+				img,vbuff = nil,nil
+				onNetGetFile = onNetGetFileOld
+				os.delay(75)
 
 				if tb_cop[scr.sel].path:lower() == "vitacheat.skprx" then--360
 					if not files.exists("ux0:data/AUTOPLUGIN2/font365.zip") then

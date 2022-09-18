@@ -34,9 +34,8 @@ end
 
 function exit_bye_bye()
 
-
 	tai.sync("ux0:config_test.txt") --Write Test---------------------------------------
-	os.message("bye")
+	--os.message("bye")
 	error("usb error")
 	os.exit()
 
@@ -68,7 +67,8 @@ end
 __file = ""
 function onNetGetFile(size,written,speed)
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.green:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
 	screen.print(480,12,tostring(__file),1.2,color.white, color.blue:a(135),__ACENTER)
 
@@ -86,7 +86,8 @@ end
 function onAppInstall(step, size_argv, written, file, totalsize, totalwritten)
 
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.green:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
     if step == 1 then -- Only msg of state
 		screen.print(10,12,LANGUAGE["UPDATER_SEARCH_UNSAFE_VPK"].."   "..tostring(__file))
@@ -112,7 +113,8 @@ end
 function onExtractFiles(size,written,file,totalsize,totalwritten)
 
 	if back then back:blit(0,0) end
-	draw.fillrect(0,0,960,40, color.blue:a(100))
+	draw.fillrect(0,0,960,40,color.black:a(100))
+	draw.offsetgradrect(0,0,960,40,color.black:a(85),color.black:a(135),0x0,0x0,20)
 
 	if written != 0 then
 		l = (written*940)/size

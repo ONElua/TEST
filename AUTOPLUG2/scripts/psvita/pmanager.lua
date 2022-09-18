@@ -43,6 +43,7 @@ function pluginsmanager()
 	table.insert(tb_cop, { name = "Sysident by cuevavirus", path = "sysident.skprx", section = "KERNEL", desc = LANGUAGE["INSTALLP_DESC_SYSIDENT"] })
 	table.insert(tb_cop, { name = "Ds4touch by MERLev", path = "ds4touch.skprx", section = "KERNEL", path2 = "ds4touch.suprx", section2 = "ALL", desc = LANGUAGE["INSTALLP_DESC_DS4TOUCH"] })
 
+
 	for k,v in pairs(tai.gameid) do
 		if k:lower() != "kernel" and k:lower() != "main" and k:lower() != "all" then
 			table.insert(sections, k)

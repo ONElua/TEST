@@ -26,7 +26,6 @@ function psvita_plugins_online()
 	__file = "Database Plugins"
 	--Online_Plugins
 	local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/plugins/plugins.lua", APP_REPO, APP_PROJECT), tmpdir.."plugins.lua")
-	--os.message("res: "..tostring(res).."\n\nsuccess: "..tostring(res.success).."\n\nst_code: "..res.status_code.."\n\nheaders: "..tostring(res.headers))
 	if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."plugins.lua") then
 		dofile(tmpdir.."plugins.lua")
 	else
@@ -36,6 +35,9 @@ function psvita_plugins_online()
 
 	local __flag = false
 	if #Online_Plugins > 0 then
+
+		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		local onNetGetFileOld = onNetGetFile
 		onNetGetFile = nil
@@ -131,6 +133,9 @@ function psvita_plugins_online()
 		end
 		if not _find then
 
+			draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+			screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
+
 			--os.message("Try New Plugin\n"..Online_Plugins[i].path)
 			local vitacheat_path = nil
 			if Online_Plugins[i].path:lower() == "vitacheat360.skprx" then vitacheat_path = "vitacheat360"
@@ -190,34 +195,30 @@ function psvita_plugins_online()
 	end
 	onNetGetFile = onNetGetFileOld
 --Clean
-	--files.delete("ux0:data/AUTOPLUGIN2/plugins/")
-	--files.delete("ux0:data/AUTOPLUGIN2/lang/")
+	files.delete("ux0:data/AUTOPLUGIN2/plugins/")
+	files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 	__file = ""
 	if __flag then
-
+		
 		local onNetGetFileOld = onNetGetFile
 		onNetGetFile = nil
 
-		http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/scripts/psvita/autoplugin.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."autoplugin.lua")
+		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
---Update config.txt
-	local fp = io.open("log.txt", "w+")
-	for s,t in pairs(res.headers) do
-		fp:write(string.format(' %s = "%s"\n', tostring(s), tostring(t)))
-	end
-	fp:close()
-	--error("usb")
-		--os.message("res: "..tostring(res).."\n\nsuccess: "..tostring(res.success).."\n\nst_code: "..res.headers.status_code.."\n\nheaders: "..tostring(res.headers))
+--[[
+		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/scripts/psvita/autoplugin.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."autoplugin.lua")
 		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."autoplugin.lua") then
 			files.move(tmpdir.."autoplugin.lua","scripts/psvita/")
 			dofile("scripts/psvita/autoplugin.lua")--Official
 		else
 			files.delete(tmpdir.."autoplugin.lua")
 		end
+]]
 		--Update Langs
 		update_lang(nil)
-		--files.delete("ux0:data/AUTOPLUGIN2/lang/")
+		files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 		onNetGetFile = onNetGetFileOld
 
@@ -309,7 +310,8 @@ function psvita_plugins_online()
 
 		if back then back:blit(0,0) end
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
