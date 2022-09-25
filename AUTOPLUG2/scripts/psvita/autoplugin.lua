@@ -126,7 +126,7 @@ function plugins_installation(obj)
 			
 			local onNetGetFileOld = onNetGetFile
 			onNetGetFile = nil
-			http.download("https://github.com/devnoname120/vitabright-lut-editor/releases/latest/","tmp")
+			http.download("https://github.com/devnoname120/vitabright-lut-editor","tmp")
 			onNetGetFile = onNetGetFileOld
 			if files.exists("tmp") then
 				local objh = html.parsefile("tmp")
@@ -137,11 +137,10 @@ function plugins_installation(obj)
 						--os.message("Links "..#links)
 						for i=1,#links do
 							if links[i].href then
-								if links[i].href:find(".vpk",1,true) then
+								if links[i].href:find("releases/tag/",1,true) then
 									--os.message(links[i].href)
-									onNetGetFile = onNetGetFileOld
-									__file = "VitabrightLutEditor.vpk"
-									http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk")
+									__file = "Vitabrightluteditor "..files.nopath(links[i].href)
+									http.download("https://github.com/devnoname120/vitabright-lut-editor/releases/download/"..files.nopath(links[i].href).."/vitabright-lut-editor-1.1.vpk","ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk")
 									if files.exists("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk") then
 										game.install("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk",false)
 										break
@@ -168,7 +167,7 @@ function plugins_installation(obj)
 			files.copy(path_plugins.."vitagrafix/patch/", "ux0:data/VitaGrafix/")
 			local onNetGetFileOld = onNetGetFile
 			onNetGetFile = nil
-			http.download("https://github.com/Kirezar/VitaGrafixConfigurator/releases/latest/","tmp")
+			http.download("https://github.com/Kirezar/VitaGrafixConfigurator","tmp")
 			onNetGetFile = onNetGetFileOld
 			if files.exists("tmp") then
 				local objh = html.parsefile("tmp")
@@ -179,11 +178,11 @@ function plugins_installation(obj)
 						--os.message("Links "..#links)
 						for i=1,#links do
 							if links[i].href then
-								if links[i].href:find("VitaGrafixConfigurator.vpk",1,true) then
+								if links[i].href:find("releases/tag/",1,true) then
 									--os.message(links[i].href)
-									onNetGetFile = onNetGetFileOld
-									__file = "VitaGrafixConfigurator.vpk"
-									http.download("https://github.com"..links[i].href,"ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk")
+									--onNetGetFile = onNetGetFileOld
+									__file = "VitaGrafixConfigurator".." "..files.nopath(links[i].href)
+									http.download("https://github.com/Kirezar/VitaGrafixConfigurator/releases/download/"..files.nopath(links[i].href).."/VitaGrafixConfigurator.vpk","ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk")
 									http.download("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
 									if files.exists("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk") then
 										game.install("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk",false)
