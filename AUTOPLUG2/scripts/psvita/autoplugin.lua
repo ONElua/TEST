@@ -140,9 +140,9 @@ function plugins_installation(obj)
 								if links[i].href:find("releases/tag/",1,true) then
 									--os.message(links[i].href)
 									__file = "Vitabrightluteditor "..files.nopath(links[i].href)
-									http.download("https://github.com/devnoname120/vitabright-lut-editor/releases/download/"..files.nopath(links[i].href).."/vitabright-lut-editor-1.1.vpk","ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk")
+									http.download("https://github.com/devnoname120/vitabright-lut-editor/releases/download/"..files.nopath(links[i].href).."/vitabright-lut-editor-1.1.vpk","ux0:data/AUTOPLUGIN2/vpks/vitabrightluteditor.vpk")
 									if files.exists("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk") then
-										game.install("ux0:data/AUTOPLUGIN2/vitabrightluteditor.vpk",false)
+										game.install("ux0:data/AUTOPLUGIN2/vpks/vitabrightluteditor.vpk",false)
 										break
 									end
 								end
@@ -182,10 +182,10 @@ function plugins_installation(obj)
 									--os.message(links[i].href)
 									--onNetGetFile = onNetGetFileOld
 									__file = "VitaGrafixConfigurator".." "..files.nopath(links[i].href)
-									http.download("https://github.com/Kirezar/VitaGrafixConfigurator/releases/download/"..files.nopath(links[i].href).."/VitaGrafixConfigurator.vpk","ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk")
+									http.download("https://github.com/Kirezar/VitaGrafixConfigurator/releases/download/"..files.nopath(links[i].href).."/VitaGrafixConfigurator.vpk","ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk")
 									http.download("https://raw.githubusercontent.com/Electry/VitaGrafixPatchlist/master/patchlist.txt", "ux0:data/VitaGrafix/patchlist.txt")
-									if files.exists("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk") then
-										game.install("ux0:data/AUTOPLUGIN2/VitaGrafixConfigurator.vpk",false)
+									if files.exists("ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk") then
+										game.install("ux0:data/AUTOPLUGIN2/vpks/VitaGrafixConfigurator.vpk",false)
 										break
 									end
 								end
