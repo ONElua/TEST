@@ -332,7 +332,6 @@ function autoplugin()
 	local xscr1 = 10
 	scr.ini,scr.lim,scr.sel = 1,limit,1
 
-	--local icon0 = nil
 	while true do
 		buttons.read()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
@@ -431,14 +430,10 @@ function autoplugin()
 			if buttons.left or buttons.right then xscr1 = 10 end
 
 			if buttons.up or buttons.analogly < -60 then
-				if scr:up() then xscr1 = 10
-					--icon0 = nil
-				end
+				if scr:up() then xscr1 = 10	end
 			end
 			if buttons.down or buttons.analogly > 60 then
-				if scr:down() then xscr1 = 10 
-					--icon0 = nil
-				end
+				if scr:down() then xscr1 = 10 end
 			end
 
 			--Install selected plugins
