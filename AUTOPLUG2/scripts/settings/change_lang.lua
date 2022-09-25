@@ -54,7 +54,7 @@ function change_lang()
 
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
@@ -181,7 +181,7 @@ function change_lang()
 
 				if __LANG == "CHINESE_T" or __LANG == "CHINESE_S" or __LANG == "TURKISH" then
 					if not files.exists("ux0:data/AUTOPLUGIN2/font/font.pgf") then
-						if back then back:blit(0,0) end
+						if back2 then back2:blit(0,0) end
 							message_wait(LANGUAGE["CHINESE_FONT_DOWNLOAD"])
 						os.delay(500)
 						__file = "font.pgf"
@@ -198,7 +198,7 @@ function change_lang()
 				end
 
 				os.delay(150)
-				if back then back:blit(0,0) end
+				if back2 then back2:blit(0,0) end
 					message_wait(LANGUAGE["LANGUAGE_RELOAD"])
 				os.delay(1500)
 

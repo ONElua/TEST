@@ -99,7 +99,7 @@ function customimgsplash()
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
 
 		draw.fillrect(0,0,960,55,color.black:a(100))
 		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)

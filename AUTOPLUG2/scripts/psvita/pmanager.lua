@@ -89,7 +89,9 @@ function pluginsmanager()
 	while true do
 		buttons.read()
 		
-		if back2 then back2:blit(0,0) end
+		if back then back:blit(0,0) end
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
 		draw.fillrect(870,0,90,40, color.green:a(90))

@@ -79,7 +79,7 @@ plugins = {
 { name = "MiniVitaTV by TheOfficialFloW beta 0.4", id = "MINIVITATV.png", path = "minivitatv.skprx", section = "KERNEL", path2 = "ds3.skprx", section2 = "KERNEL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_MINIVITATV"], KEY = "INSTALLP_DESC_MINIVITATV", link = "https://raw.githubusercontent.com/TheOfficialFloW/MiniVitaTV/master/README.md", },
 { name = "reVita by MERLev v1.0.8", id = "REVITA.png", path = "reVita.skprx", section = "KERNEL", path2 = "ioplus.skprx", section2 = "KERNEL", version = "0003", dl = "reVitaMotion.suprx", desc = LANGUAGE["INSTALLP_DESC_REVITA"], KEY = "INSTALLP_DESC_REVITA", link = "https://raw.githubusercontent.com/MERLev/reVita/master/README.md", },
 --with config&configpath&2 prxs
-{ name = "PSVshellPlus by GrapheneCt v1.2", id = "PSVSHELLPLUS.png", path = "PSVshellPlus_Kernel.skprx", section = "KERNEL", path2 = "PSVshellPlus_Shell.suprx", section2 = "main", config = "PSVshell.zip", configpath = "ur0:data/", version = "0001", tai_del1 = "PSVshell.skprx", section_del1 = "KERNEL", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
+{ name = "PSVshellPlus by GrapheneCt v1.3", id = "PSVSHELLPLUS.png", path = "PSVshellPlus_Kernel.skprx", section = "KERNEL", path2 = "PSVshellPlus_Shell.suprx", section2 = "main", config = "PSVshell.zip", configpath = "ur0:data/", version = "0002", tai_del1 = "PSVshell.skprx", section_del1 = "KERNEL", dl = "PSVshell.zip", desc = LANGUAGE["INSTALLP_DESC_PSVSHELLPLUS"], KEY = "INSTALLP_DESC_PSVSHELLPLUS", link = "https://raw.githubusercontent.com/GrapheneCt/PSVshellPlus/main/README.md", },
 
 
 
