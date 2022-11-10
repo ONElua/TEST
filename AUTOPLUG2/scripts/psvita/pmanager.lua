@@ -73,6 +73,7 @@ function pluginsmanager()
 				if plugs[sections[y]][x].file == tb_cop[k].path:lower() then
 					plugs[sections[y]][x].bridge = tb_cop[k]
 					plugs[sections[y]][x].desc = tb_cop[k].desc
+					plugs[sections[y]][x].crc = tb_cop[k].crc
 					--os.message("Bridge: "..plugs[sections[y]][x].bridge.name)
 					break;
 				end
@@ -89,9 +90,11 @@ function pluginsmanager()
 	while true do
 		buttons.read()
 		
-		if back then back:blit(0,0) end
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		if back2 then back2:blit(0,0) end
+		wave:blit(0.8,55)
+
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,18,LANGUAGE["UNINSTALLP_TITLE"],1.2,color.white, 0x0, __ACENTER)
 
 		draw.fillrect(870,0,90,40, color.green:a(90))

@@ -130,10 +130,11 @@ function npdrm_free()
 		buttons.read()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
-		if back then back:blit(0,0) end
+		if back2 then back2:blit(0,0) end
+		wave:blit(0.8,55)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["NPDRMFREE_TITLE"],1.2,color.white,0x0,__ACENTER)
 
 		--Partitions

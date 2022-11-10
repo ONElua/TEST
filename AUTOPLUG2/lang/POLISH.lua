@@ -459,6 +459,7 @@ POLISH["INSTALLP_DESC_QUICKLAUNCHER"] =             "A Plugin to add buttons to 
 POLISH["INSTALLP_DESC_WAVE"] =                      "A PS Vita home background wave add plugin."
 
 --ALL
+POLISH["INSTALLP_DESC_3GDISABLE"] =                 "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 POLISH["INSTALLP_DESC_VITANEARESTN"] =              "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 POLISH["INSTALLP_DESC_DT2S"] =                      "TA wersja działa tylko po podwójnym stuknięciu w ekran dotykowy. Nie jest zalecana, gdyż często dochodzi do odblokowania ekranu po podwójnym doknięciu."
 POLISH["INSTALLP_DESC_YAMT"] =                      "Jeszcze jeden plugin kernela montowania/odmontowania dla PSVita/PSTV (Wymagane Enso, Kompatybilne TYLKO z oprogramowaniem 3.60 i 3.65"
@@ -493,6 +494,7 @@ POLISH["INSTALLP_DESC_RAPIDMENU"] =                 "Skróć czas otwierania szy
 POLISH["INSTALLP_DESC_SCOREHAX"] =                  "Instant pro w każdej grze!"
 POLISH["INSTALLP_DESC_HONRIPPER"] =                 "HonRipper to plugin do aplikacji PS Vita Sony Reader (PCSC80012), która służy do wyodrębniania zawartości formatu książki Sony .MNH (Marlin-Hon)."
 POLISH["INSTALLP_DESC_HIDEAP"] =                    "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
+POLISH["INSTALLP_DESC_VITAKEYBOARD"] =              "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 POLISH["INSTALLP_DESC_PS4LINK"] =                   "Wtyczka taiHEN, która pozwala wymusić preferowaną konfigurację przycisku gry zdalnej"

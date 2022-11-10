@@ -67,7 +67,7 @@ function update_lang(tb)
 			__file = Online_Langs[i].id
 			local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/lang/%s.lua", APP_REPO, APP_PROJECT, APP_FOLDER, Online_Langs[i].id), tmpdir..Online_Langs[i].id..".lua")
 				--os.message("Online_Langs 2\n"..Online_Langs[i].id)
-				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[j].id..".lua") then
+				if res.headers and res.headers.status_code == 200 and files.exists(tmpdir..Online_Langs[i].id..".lua") then
 				table.insert(tmps, { line = i })
 				__flag = true
 				files.move(tmpdir..Online_Langs[i].id..".lua","lang/")
@@ -121,9 +121,10 @@ function lang_online()
 		if change then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
+		wave:blit(0.8,55)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_LANG_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then

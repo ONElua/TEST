@@ -459,6 +459,7 @@ JAPANESE["INSTALLP_DESC_QUICKLAUNCHER"] =               "A Plugin to add buttons
 JAPANESE["INSTALLP_DESC_WAVE"] =                         "A PS Vita home background wave add plugin."
 
 --ALL
+JAPANESE["INSTALLP_DESC_3GDISABLE"] =                   "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 JAPANESE["INSTALLP_DESC_VITANEARESTN"] =                "Simple taiHEN plugin for PlayStation Vita that overrides texture sampling. Forces rendering with point filtering method (Nearest-Neighbor interpolation), instead of linear"
 JAPANESE["INSTALLP_DESC_DT2S"] =                        "This version works if you tap anywhere on the screen twice. The only reason this version is not recommended because ocassionally you may tap the touch screen twice when you didn't want to."
 JAPANESE["INSTALLP_DESC_YAMT"] =                        "PSVita/PSTV用の別の（再）マウントツールカーネルプラグイン （Ensoが必要、ファームウェア3.60および3.65とのみ互換性あり）"
@@ -493,6 +494,7 @@ JAPANESE["INSTALLP_DESC_RAPIDMENU"] =                   "Reduce quick menu open 
 JAPANESE["INSTALLP_DESC_SCOREHAX"] =                    "Instant pro at any game!"
 JAPANESE["INSTALLP_DESC_HONRIPPER"] =                   "HonRipper is the plugin for PS Vita Sony Reader application (PCSC80012) that is designed to extract contents of Sony's .MNH (Marlin-Hon) book format."
 JAPANESE["INSTALLP_DESC_HIDEAP"] =                      "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
+JAPANESE["INSTALLP_DESC_VITAKEYBOARD"] =                "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 JAPANESE["INSTALLP_DESC_PS4LINK"] =                     "優先リモート再生ボタンの設定を強制することができるtaiHENプラグイン"

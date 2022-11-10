@@ -459,6 +459,7 @@ SPANISH["INSTALLP_DESC_QUICKLAUNCHER"] =                "A Plugin to add buttons
 SPANISH["INSTALLP_DESC_WAVE"] =                         "A PS Vita home background wave add plugin."
 
 --ALL
+SPANISH["INSTALLP_DESC_3GDISABLE"] =                    "This is the proper way of disabling 3g. This has the effect of essentially tricking the system into thinking this is a regular WiFi only Vita"
 SPANISH["INSTALLP_DESC_VITANEARESTN"] =                 "Sencillo Plugin de taiHEN para PS Vita que sobreescribe el muestreo de texturas (las distintas formas de mostrar texturas). Fuerza el renderizado, en vez de usar filtrado Lineal, lo hace con el método Point Filtering (Filtrado por Punto. Interpolación por Nearest-Neighbor o Vecino más Cercano en Español)"
 SPANISH["INSTALLP_DESC_DT2S"] =                         "Esta versión funciona si tocas dos veces en cualquier parte de la pantalla. La única razón por la que no se recomienda esta versión, es porque a veces puedes poner tu consola en suspensión por tocar dos veces en la pantalla sin querer"
 SPANISH["INSTALLP_DESC_YAMT"] =                         "Otro Plugin de Kernel de (re)montaje para PS Vita/PlayStation TV (Requiere Enso, compatible SOLO con firmware 3.60 y 3.65"
@@ -493,6 +494,7 @@ SPANISH["INSTALLP_DESC_RAPIDMENU"] =                    "Reduce el tiempo que to
 SPANISH["INSTALLP_DESC_SCOREHAX"] =                     "¡Vuelvete un pro al instante en cualquier juego!(Modifica Puntajes online en juegos)"
 SPANISH["INSTALLP_DESC_HONRIPPER"] =                    "HonRipper es un plugin para la aplicación Sony Reader en PS Vita (PCSC80012) diseñada para dumpear (extraer) el contenido de los libros en el formato .MNH (Marlin-Hon) de Sony"
 SPANISH["INSTALLP_DESC_HIDEAP"] =                       "Hides ux0:/app/AUTOPLUG2 from any app its loaded into"
+SPANISH["INSTALLP_DESC_VITAKEYBOARD"] =                 "VitaKeyboard is a plugin and application for PS Vita that lets you use it as a USB Keyboard. The host will think your vita is an actual keyboard"
 
 --*NPXS10013
 SPANISH["INSTALLP_DESC_PS4LINK"] =                      "Plugin de taiHEN que permite forzar la configuración de botones preferida en Juego Remoto (PS4)"

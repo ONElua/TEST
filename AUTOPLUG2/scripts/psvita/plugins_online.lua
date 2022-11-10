@@ -15,7 +15,10 @@ function psvita_plugins_online()
 	files.delete("ux0:data/AUTOPLUGIN2/lang/")
 
 	if back then back:blit(0,0) end
-		message_wait()
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
+		screen.print(480,20,LANGUAGE["MENU_PSVITA_CHECK_ONLINE_PLUGINS"],1.2,color.white,0x0,__ACENTER)
+		screen.flip()
 	os.delay(500)
 
 	buttons.homepopup(0)
@@ -36,7 +39,8 @@ function psvita_plugins_online()
 	local __flag = false
 	if #Online_Plugins > 0 then
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		local onNetGetFileOld = onNetGetFile
@@ -133,7 +137,8 @@ function psvita_plugins_online()
 		end
 		if not _find then
 
-			draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+			draw.fillrect(0,0,960,55,color.black:a(100))
+			draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 			screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 			--os.message("Try New Plugin\n"..Online_Plugins[i].path)
@@ -204,10 +209,11 @@ function psvita_plugins_online()
 		local onNetGetFileOld = onNetGetFile
 		onNetGetFile = nil
 
-		draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.black:a(100))
+		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
 		screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
---[[
+		os.message("descargar autoplugin.lua")
 		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/scripts/psvita/autoplugin.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."autoplugin.lua")
 		if res.headers and res.headers.status_code == 200 and files.exists(tmpdir.."autoplugin.lua") then
 			files.move(tmpdir.."autoplugin.lua","scripts/psvita/")
@@ -215,7 +221,7 @@ function psvita_plugins_online()
 		else
 			files.delete(tmpdir.."autoplugin.lua")
 		end
-]]
+
 		--Update Langs
 		update_lang(nil)
 		files.delete("ux0:data/AUTOPLUGIN2/lang/")
@@ -224,6 +230,7 @@ function psvita_plugins_online()
 
 		local onNetGetFileOld = onNetGetFile
 		onNetGetFile = nil
+		os.message("Descargar plugins.lua")
 		local res = http.download(string.format("https://raw.githubusercontent.com/%s/%s/master/%s/plugins/plugins.lua", APP_REPO, APP_PROJECT, APP_FOLDER), tmpdir.."plugins.lua")
 		onNetGetFile = onNetGetFileOld
 
@@ -251,8 +258,12 @@ function psvita_plugins_online()
 
 						local idx = tai.find(tb_cop[i].section,tb_cop[i].path)
 						if idx != nil then
+
 							if os.dialog(tb_cop[i].path.."    "..LANGUAGE["UPDATE_QUESTION"], LANGUAGE["MENU_PSVITA_INSTALL_PLUGINS"], __DIALOG_MODE_OK_CANCEL) == true then
 								--plugins_installation(tb_cop[i])
+
+								local onExtractFilesOld = onExtractFiles
+								onExtractFiles = nil
 
 								--Copy Especial Config for the plugin
 								if tb_cop[i].config then
@@ -270,6 +281,8 @@ function psvita_plugins_online()
 										end
 									end
 								end
+								onExtractFiles = onExtractFilesOld
+
 								--Copy plugin to tai folder
 								files.copy(path_plugins..tb_cop[i].path, path_tai)
 
@@ -309,9 +322,10 @@ function psvita_plugins_online()
 		if change or ReloadConfig then buttons.homepopup(0) else buttons.homepopup(1) end
 
 		if back then back:blit(0,0) end
+		wave:blit(0.8,55)
 
-		draw.fillrect(0,0,960,55,color.black:a(100))
-		draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)--draw.offsetgradrect(0,0,960,55,color.blue:a(85),color.blue:a(85),0x0,0x0,20)
+		draw.fillrect(0,0,960,55,color.shine:a(15))
+		--draw.offsetgradrect(0,0,960,55,color.black:a(85),color.black:a(135),0x0,0x0,20)
         screen.print(480,20,LANGUAGE["MENU_TITLE_PLUGINS_ONLINE"],1.2,color.white,0x0,__ACENTER)
 
 		if scroll.maxim > 0 then
