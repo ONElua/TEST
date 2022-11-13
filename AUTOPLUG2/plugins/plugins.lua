@@ -247,13 +247,14 @@ plugins = {
   crc = 0x9420f9c2, v = "v0.6", version = "0001", },
 { name = "Volume Control Pack by GrapheneCt", id = "VOLUMECTRL.png", path = "ModalVol.suprx", section = "ALL", desc = LANGUAGE["INSTALLP_DESC_MODALVOL"], KEY = "INSTALLP_DESC_MODALVOL",
   crc = 0xc7e873f6, v = "v1.0", version = "0001", link = "https://raw.githubusercontent.com/GrapheneCt/Volume-Control-Pack/master/README.md", },
+{ name = "hide-autoplugin by SilicaAndPina v1.0", id = "HIDEAP.png", path = "hide-autoplugin.suprx", section = "ALL", desc = LANGUAGE["INSTALLP_DESC_HIDEAP"], KEY = "INSTALLP_DESC_HIDEAP", link = "https://silica.codes/SilicaAndPina/hide-autoplugin/raw/branch/main/README.md",
+  crc = 0x3282486c , v = "v1.0", version = "0001", },
 
 --{ name = "dt2s-vita v1.1 DoubleTap2Sleep for PS VITA by joel16", id = "DT2S.png", path = "dt2s.suprx", section = "ALL", tai_del1 = "dt2s_statusbar.suprx", section_del1 = "main", version = "0002", desc = LANGUAGE["INSTALLP_DESC_DT2S"], KEY = "INSTALLP_DESC_DT2S", link = "https://raw.githubusercontent.com/joel16/dt2s-vita/main/README.md", },
 --{ name = "Oclock Vita by frangarcj v1.2.1", id = "OCLOCKVITA.png", path = "oclockvita.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_OVERCLOCK"], KEY = "INSTALLP_DESC_OVERCLOCK", link = "https://raw.githubusercontent.com/frangarcj/oclockvita/master/README.md", },
 --{ name = "Framecounter by Rinnegatamante v1.2", id = "FRAMECOUNTER.png", path = "Framecounter.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FRAMECOUNTER"], KEY = "INSTALLP_DESC_FRAMECOUNTER", },
 --{ name = "FuckPSSE by SilicaAndPina v1.1", id = "FPSSE.png", path = "FuckPSSE.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_FUCKPSSE"], KEY = "INSTALLP_DESC_FUCKPSSE", link = "https://silica.codes/SilicaAndPina/fuckpsse/raw/branch/master/README.md", },
 --{ name = "PSMPatch by SilicaAndPina v1.1", id = "PSMPATCH.png", path = "PSMPatch.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_PSMPATCH"], KEY = "INSTALLP_DESC_PSMPATCH", link = "https://silica.codes/SilicaAndPina/psmpatch/raw/branch/master/README.md", },
---{ name = "hide-autoplugin by SilicaAndPina v1.0", id = "HIDEAP.png", path = "hide-autoplugin.suprx", section = "ALL", version = "0001", desc = LANGUAGE["INSTALLP_DESC_HIDEAP"], KEY = "INSTALLP_DESC_HIDEAP", link = "https://silica.codes/SilicaAndPina/hide-autoplugin/raw/branch/main/README.md", },
 
 
 --2 prxs
